@@ -1,0 +1,22 @@
+# Autoriser les bons robots à indexer le site
+User-agent: *
+Allow: /
+
+# Bloquer des robots malveillants ou trop gourmands connus
+User-agent: BLEXBot
+User-agent: MJ12bot
+User-agent: DotBot
+User-agent: Rogerbot
+User-agent: AhrefsBot
+User-agent: SemrushBot
+Disallow: /
+
+# Empêcher l'accès aux dossiers sensibles (à adapter selon ton site)
+User-agent: *
+Disallow: /admin/
+Disallow: /config/
+Disallow: /private/
+Disallow: /temp/
+
+# Indiquer le chemin du sitemap pour les bons moteurs de recherche
+Sitemap: https://www.tonsite.com/sitemap.xml
